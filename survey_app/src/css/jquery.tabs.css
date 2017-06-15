@@ -1,0 +1,156 @@
+.tabs {
+	position: relative;
+}
+
+.tabs__head {
+	position: relative;
+	z-index: 1;
+
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	zoom: 1;
+
+	-webkit-touch-callout: none;
+}
+
+.tabs__head:before, .tabs__head:after {
+	content: "";
+
+	display: table;
+}
+
+.tabs__head:after {
+	clear: both;
+}
+
+.lt-ie8 .tabs__head {
+	zoom: 1;
+}
+
+.tabs__body {
+	position: relative;
+	z-index: 2;
+}
+
+.tabs__tab {
+	position: relative;
+
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+
+	background: none;
+	cursor: pointer;
+}
+
+.tabs__tab_active {
+	cursor: default;
+}
+
+.tabs__icon, .tabs__head-text {
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+.tabs__icon {
+	min-height: 30px;
+	margin-right: 6px;
+}
+
+.tabs__icon svg {
+	-webkit-transition: 125ms all ease;
+	transition: 125ms all ease;
+
+	fill: currentColor;
+}
+
+.tabs__preloader {
+	position: relative;
+}
+
+.tabs__pane {
+	position: relative;
+
+	display: none;
+}
+
+.tabs__pane_active {
+	display: block;
+}
+
+// Default
+.tabs_style_default {
+	margin: 0 0 30px;
+}
+
+.tabs_style_default .tabs__head {
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: #ddd;
+}
+
+.tabs_style_default .tabs__tab {
+	margin-bottom: -1px;
+	padding: 12px 22px;
+	padding-bottom: 15px;
+
+	font-size: 16px;
+	line-height: 1.4;
+	color: #111;
+
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: transparent;
+	border-radius: 2px 2px 0 0;
+}
+
+.tabs_style_default .tabs__tab:last-child {
+	margin-right: 0;
+}
+
+.tabs_style_default .tabs__tab_active {
+	background: #fff;
+	border-color: #ddd;
+}
+
+.tabs_style_default .tabs__preloader {
+	height: 80px;
+
+	background: url("tabs__preloader.svg") no-repeat 50% 20px;
+	background-size: 30px;
+}
+
+.tabs_style_default .tabs__head_inverted {
+	border-bottom: none;
+	border-top-width: 1px;
+}
+
+.tabs_style_default .tabs__head_inverted .tabs__tab{
+	border-width: 0 1px 1px 1px;
+	margin-top: -1px;
+}
+
+.tabs_style_default .tabs__pane {
+	margin: 20px 0;
+}
+
+.tabs_style_default.tabs_color_blue .tabs__tab_active {
+	border-color: #2ea9fa;
+}
+
+.tabs_style_default.tabs_color_blue .tabs__head {
+	border-color: #2ea9fa;
+}
+

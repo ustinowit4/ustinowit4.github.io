@@ -1,0 +1,67 @@
+.page__content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.section {
+    margin-bottom: 3em;
+}
+
+.section__title {
+    font-size: 1.3em;
+}
+
+.header {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    border: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: 125ms all ease-in-out;
+    -moz-transition: 125ms all ease-in-out;
+    -ms-transition: 125ms all ease-in-out;
+    -o-transition: 125ms all ease-in-out;
+    transition: 125ms all ease-in-out;
+}
+
+.button_color_blue {
+    padding: 12px 22px;
+    font-size: 16px;
+    line-height: 1.4;
+    background: #3498da;
+    color: #fff;
+}
+
+.button_color_blue:hover {
+    background: #2ea9fa;
+}
+
+.button__text,
+.button__icon {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.tabs_style_default.tabs_color_blue .tabs__tab_active {
+    outline: none;
+}
+

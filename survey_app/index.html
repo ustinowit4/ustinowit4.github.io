@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Survey App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="dist/apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="dist/css/normalize.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="src/css/jquery.tabs.css">
+    <link rel="stylesheet" href="src/css/survey_style.css">
+    <link rel="stylesheet" href="src/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+
+    <script src="dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="page__content">
+    <section class="section">
+        <form id="personal_form" class="form-horizontal" action="/resume/personal" method="post"
+              enctype="multipart/form-data">
+            <h2 class="section__title">Анкета соискателя</h2>
+            <div data-tabs-role="tabs" class="tabs tabs_style_default tabs_color_blue">
+                <span class="tabs__description visuallyhidden" data-tabs-role="description">Use left and right arrows to navigate between tabs.</span>
+                <div class="tabs__head">
+                    <button class="tabs__tab" type="button" data-tabs-target="tab1" data-tabs-role="tab">Личные данные
+                    </button>
+                    <button class="tabs__tab" type="button" data-tabs-target="tab2" data-tabs-role="tab">Контактные
+                        данные
+                    </button>
+                    <button class="tabs__tab" type="button" data-tabs-target="tab3" data-tabs-role="tab">Фото/Резюме
+                    </button>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__pane" data-tabs-id="tab1">
+                        <div class="container">
+                            <h3>Личные данные</h3>
+                            <div class="form-group">
+                                <label for="last_name" class="col-sm-2 control-label">Фамилия:</label>
+                                <div class="col-sm-4">
+                                    <input id="last_name" name="lastName" type="text" class="form-control" value=""/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="first_name" class="col-sm-2 control-label">Имя:</label>
+                                <div class="col-sm-4">
+                                    <input id="first_name" name="firstName" type="text" class="form-control" value=""/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="col-sm-2 control-label">E-mail:</label>
+                                <div class="col-sm-4">
+                                    <input id="email" name="email" placeholder="example@com" type="email"
+                                           class="form-control" value=""/></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Дата рождения:</label>
+                                <div class="col-sm-4">
+                                    <div class="input-group date" data-provide="datepicker">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-addon"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="maritalStatus" class="col-sm-2 control-label">Семейное
+                                    положение/дети:</label>
+                                <div class="col-sm-4">
+                                    <input id="maritalStatus" name="maritalStatus" type="text" class="form-control"
+                                           value=""></div>
+                            </div>
+
+                        </div>
+
+                        <button id="button" type="button" data-tabs-role="control" data-tabs-target="tab2"
+                                class="button button_color_blue">Далее
+                        </button>
+
+                    </div>
+                    <div class="tabs__pane" data-tabs-id="tab2">
+                        <div class="container">
+                            <h3>Контактные данные</h3>
+                            <div class="form-group">
+                                <label for="country" class="col-sm-2 control-label">Страна проживания:</label>
+                                <div class="col-sm-4">
+                                    <select id="country" name="contactForm.country" class="form-control">
+                                        <option value="Беларусь">Беларусь</option>
+                                        <option value="Россия">Россия</option>
+                                        <option value="Украина">Украина</option>
+                                    </select></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address" class="col-sm-2 control-label">Адрес проживания:</label>
+                                <div class="col-sm-4">
+                                    <input id="address" name="contactForm.address" type="text" class="form-control"
+                                           value=""/></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone_main" class="col-sm-2 control-label">Контактный телефон:</label>
+                                <div class="col-sm-4">
+                                    <input id="phone_main" name="contactForm.phonePrimary" type="text"
+                                           class="form-control" value=""/></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="skype" class="col-sm-2 control-label">Skype:</label>
+                                <div class="col-sm-4">
+                                    <input id="skype" name="contactForm.skype" type="text" class="form-control"
+                                           value=""/></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="military" class="col-sm-2 control-label">Прохождение воинской
+                                    службы:</label>
+                                <div class="col-sm-4">
+                                    <input id="military" name="contactForm.militaryBasement" type="text"
+                                           class="form-control" value=""/></div>
+                            </div>
+
+                        </div>
+
+                        <button type="button" data-tabs-role="control" data-tabs-target="tab1"
+                                class="button button_color_blue"> Назад
+                        </button>
+
+                        <button type="button" data-tabs-role="control" data-tabs-target="tab3"
+                                class="button button_color_blue">Далее
+                        </button>
+
+                    </div>
+                    <div class="tabs__pane" data-tabs-id="tab3">
+
+                        <div class="form-group">
+                            <label for="photo">Фотография:</label>
+                            <input id="photo" name="photo" type="file" value=""/>
+                            <p class="help-block">Прикрепите вашу фотографию</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resume">Резюме:</label>
+                            <input id="resume" name="resume" type="file" value=""/>
+                            <p class="help-block">Прикрепите ваше резюме в формате pdf/docx</p>
+                        </div>
+
+                        <button type="button" data-tabs-role="control" data-tabs-target="tab2"
+                                class="button button_color_blue">Назад
+                        </button>
+
+                        <button type="button" data-tabs-role="control"
+                                class="button button_color_blue">Сохранить и отправить
+                        </button>
+
+                    </div>
+                    <div class="tabs__preloader" data-tabs-role="preloader"></div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="src/libs/jquery-3.1.1.min.js"></script>
+<script src="src/libs/bootstrap.min.js"></script>
+<script src="src/libs/bootstrap-datepicker.min.js"></script>
+<script src="src/libs/bootstrap-datepicker.ru.min.js"></script>
+<script src="src/libs/jquery.validate.min.js"></script>
+<script src="src/libs/jquery.tabs.js"></script>
+<script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="dist/js/plugins.js"></script>
+<script src="src/js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
