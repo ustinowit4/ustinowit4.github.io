@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSans/OpenSansBold/OpenSansBold.eot");
+    src: url("../fonts/OpenSans/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot");
+    src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "mark-team-icon";
+    src: url("../fonts/mark-team-icon/fonts/mark-team-icon.eot");
+    src: url("../fonts/mark-team-icon/fonts/mark-team-icon.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/mark-team-icon/fonts/mark-team-icon.woff") format("woff"),
+    url("../fonts/mark-team-icon/fonts/mark-team-icon.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

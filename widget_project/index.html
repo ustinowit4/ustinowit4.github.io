@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web UI Kits</title>
+    <meta name="description" content="Widgets page">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="libs/colorpicker/css/colorpicker.css" >
+    <link rel="stylesheet" href="libs/jQuery-UI/jquery-ui.min.css" >
+    <link rel="stylesheet" href="libs/jQuery-UI/jquery-ui.theme.css" >
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body id="gradient">
+    <div class="widgets-page-wrapper">
+        <main class="main-wrapper">
+            <div class="left-side-bar">
+                <header class="left-side-bar-header">
+                    <div class="menu-widget">
+                        <nav>
+                            <ul class="menu-widget-topmenu">
+                                <li class="menu-widget-topmenu-content menu-widget-topmenu-content-left">
+                                    <a href="#" >
+                                        <span class="menu-icon icon-gps-pointer "></span>Check in
+                                        <span class="unread-massages">3</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-widget-topmenu-content menu-widget-topmenu-content-centre-left">
+                                    <a href="#">
+                                        <span class="menu-icon icon-heart"></span>Events
+                                    </a>
+                                </li>
+
+                                <li class="menu-widget-topmenu-content menu-widget-topmenu-content-centre-right">
+                                    <a href="#">
+                                        <span class="menu-icon icon-account"></span>Account
+                                    </a>
+                                </li>
+                                <li class="menu-widget-topmenu-content menu-widget-topmenu-content-right">
+                                    <a href="#">
+                                        <span class="menu-icon icon-settings-gear"></span>Settings
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div class="left-side-bar-left-wrapper">
+                    <div class="graphic-widget">
+                        <div class="graphic-widget-diagram-wrapper">
+                            <div class="graphic-widget-background-top-line-diagram"></div>
+                            <div class="graphic-widget-background-bottom-line-diagram"></div>
+                            <div class="graphic-widget-line-diagram-indication">
+                                <div class="triangle-up"></div>
+                                <span class="graphic-widget-line-diagram-indication-text1"></span>
+                                <span class="graphic-widget-line-diagram-indication-text2"></span>
+                            </div>
+                            <div class="graphic-widget-bar-graph-wrapper"></div>
+                            <div class="graphic-widget-line-diagram">
+                                <svg id="graphic-widget-line-diagram" width="240" height="90">
+                                    <path id="graphic-widget-line-diagram-path" />
+                                </svg>
+                            </div>
+
+                        </div>
+
+                        <div class="graphic-widget-date-place">
+                            <p class="graphic-widget-date-time-indication"></p>
+                            <p class="graphic-widget-position-indication">Salt Lake City, Utah</p>
+                        </div>
+                        <div class="graphic-widget-trading">
+                            <div class="graphic-widget-trading1">
+                                <div class="graphic-widget-trading1-indication">
+                                    <p class="graphic-widget-trading1-indication-content">13.5 M</p>
+                                    <p class="graphic-widget-trading1-indication-title">Shares Traded</p>
+                                </div>
+                            </div>
+                            <div class="graphic-widget-trading2">
+                                <div class="graphic-widget-trading2-indication">
+                                    <p class="graphic-widget-trading1-indication-content">28.44 B</p>
+                                    <p class="graphic-widget-trading1-indication-title">Market Cap</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic-widget-background-bar-chart">
+                            <h4 class="graphic-widget-bar-chart-header">AAPL</h4>
+                            <h4 class="graphic-widget-year-changing-window-header">Yearly Change</h4>
+                            <div class="graphic-widget-bar-chart">
+                            </div>
+                            <div class="graphic-widget-year-changing-window">+127. 01</div>
+                        </div>
+                    </div>
+                    <div class="profile-widget">
+                        <div class="profile-widget-avatar">
+                            <img class="profile-widget-avatar-image" src="images/profile-widget-avatar.png" alt="Avatar">
+                            <h2 class="profile-widget-avatar-user-name">
+                                Courtney Timmons
+                            </h2>
+                            <div class="profile-widget-avatar-user-info">
+                                15,323 followers
+                            </div>
+                        </div>
+                        <nav class="profile-widget-data">
+                            <ul class="profile-widget-main-menu">
+                                <li><a href="#"><span class="profile-widget-main-menu-text">Edit user</span><span class="profile-wiget-icon icon-account"></span></a></li>
+                                <li><a href="#"><span class="profile-widget-main-menu-text">Web statistics</span><span class="profile-wiget-icon icon-web-statistics"></span></a></li>
+                                <li><a href="#"><span class="profile-widget-main-menu-text">Upload settings</span><span class="profile-wiget-icon icon-settings-key"></span></a></li>
+                                <li><a href="#"><span class="profile-widget-main-menu-text">Events</span><span class="profile-wiget-icon icon-gps-pointer"></span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="left-side-bar-right-wrapper">
+                    <div class="statistic-round-diagram-widget">
+                        <header class="statistic-round-diagram-widget-header">
+                            <h2 class="statistic-round-diagram-widget-title statistic-round-diagram-widget-title-left" data-active="true">Diagram Stats</h2>
+                            <h2 class="statistic-round-diagram-widget-title statistic-round-diagram-widget-title-right" data-active="false">Month Report</h2>
+                        </header>
+                        <div class="statistic-round-diagram-widget-content">
+                            <h3 class="statistic-round-diagram-widget-diagram-title diagram-stats">DATA TRANSFER</h3>
+                            <h3 class="statistic-round-diagram-widget-diagram-title month-report">MONTH DATA TRANSFER</h3>
+                            <svg width="236" height="236" class="diagram-stats" id="dougnut-diagram">
+                                <path id="audio-arc"/>
+                                <path id="video-arc"/>
+                                <path id="photo-arc"/>
+                                <path id="rest-arc"/>
+                            </svg>
+                            <div class="statistic-round-diagram-widget-diagram-total-wrapper diagram-stats">
+                                <span class="statistic-round-diagram-widget-diagram-files"></span><br>
+                                <span class="statistic-round-diagram-widget-diagram-space"></span>
+                            </div>
+                            <div class="statistic-round-diagram-widget-data-wrapper diagram-stats">
+                                <div class="statistic-round-diagram-widget-data statistic-round-diagram-widget-data-audio">
+                                    <h3>audio</h3>
+                                    <span></span>
+                                </div>
+                                <div class="statistic-round-diagram-widget-data statistic-round-diagram-widget-data-video">
+                                    <h3>video</h3>
+                                    <span></span>
+                                </div>
+                                <div class="statistic-round-diagram-widget-data statistic-round-diagram-widget-data-photo">
+                                    <h3>photo</h3>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="statistic-round-diagram-widget-content-month-data month-report">
+                                <span class="statistic-round-diagram-widget-content-month-data-line line-quarter"></span>
+                                <span class="statistic-round-diagram-widget-content-month-data-line line-half"></span>
+                                <span class="statistic-round-diagram-widget-content-month-data-line line-three-quarter"></span>
+                                <span class="statistic-round-diagram-widget-content-month-data-days data-days-1-9">1 2 3 4 5 6 7 8 9</span>
+                                <span class="statistic-round-diagram-widget-content-month-data-days data-days-10-30">10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</span>
+                                <p>September</p>
+                            </div>
+                            <div class="statistic-round-diagram-widget-color-change">
+                                <h3 class="statistic-round-diagram-widget-color-change-title">
+                                    You can change colors of data
+                                </h3>
+                                <div class="color-picker-block audio-color"></div>
+                                <span>Change AUDIO data color</span>
+                                <div class="color-picker-block video-color"></div>
+                                <span>Change VIDEO data color</span>
+                                <div class="color-picker-block photo-color"></div>
+                                <span>Change PHOTO data color</span>
+                                <button class="color-picker-block-submit-button">Submit</button>
+                            </div>
+                            <div class="statistic-round-diagram-widget-data-change">
+                                <h3 class="statistic-round-diagram-widget-data-change-title">
+                                    You can change number of files
+                                </h3>
+                                <fieldset>
+                                    <legend>Number of audio files</legend>
+                                    <input id="audio-spinner">
+                                    <span class="statistic-round-diagram-widget-data-change-audio-max">some text</span>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Number of video files</legend>
+                                    <input id="video-spinner">
+                                    <span class="statistic-round-diagram-widget-data-change-video-max">some text</span>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Number of photo files</legend>
+                                    <input id="photo-spinner">
+                                    <span class="statistic-round-diagram-widget-data-change-photo-max">some text</span>
+                                </fieldset>
+                                <button class="data-change-block-submit-button">Submit</button>
+                            </div>
+                        </div>
+                        <footer class="statistic-round-diagram-widget-footer">
+                            <div class="statistic-round-diagram-widget-footer-button statistic-round-diagram-widget-footer-upload" data-active="false">
+                                <span class="icon-upload-cloud"></span>
+                                <p>upload files</p>
+                            </div>
+                            <div class="statistic-round-diagram-widget-footer-button statistic-round-diagram-widget-footer-share" data-active="false">
+                                <span class="icon-share"></span>
+                                <p>share link</p>
+                            </div>
+                            <div class="statistic-round-diagram-widget-footer-button statistic-round-diagram-widget-footer-back-up">
+                                <span class="icon-back-up"></span>
+                                <p>back up</p>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="navigation-widget">
+                        <nav class="navigation-widget-menu">
+                            <ul>
+                                <li class="navigation-widget-menu-item navigation-widget-menu-my-profile" data-active="false">
+                                    <div class="navigation-widget-menu-item-title-wrapper">
+                                        <span class="navigation-widget-icon icon-my-profile"></span>
+                                        <h2 class="navigation-widget-menu-item-title">my profile</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <ul class="navigation-widget-menu-dropbox my-profile-dropdox">
+                                        <li>invite friends</li>
+                                        <li>find friends</li>
+                                        <li>log out</li>
+                                    </ul>
+                                </li>
+                                <li class="navigation-widget-menu-item navigation-widget-menu-edit" data-active="false">
+                                    <div class="navigation-widget-menu-item-title-wrapper">
+                                        <span class="navigation-widget-icon icon-edit"></span>
+                                        <h2 class="navigation-widget-menu-item-title">edit</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <ul class="navigation-widget-menu-dropbox edit-dropdox">
+                                        <li>status</li>
+                                        <li>profile info</li>
+                                        <li>password</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="navigation-widget-sale-block">
+                            <div class="navigation-widget-sale-block-triangles upper-triangle"></div>
+                            <div class="navigation-widget-sale-block-rect"></div>
+                            <div class="navigation-widget-sale-block-flag">
+                                <p class="navigation-widget-sale-block-text">sale</p>
+                                <p class="navigation-widget-sale-block-text navigation-widget-sale-block-persentage">20%</p>
+                            </div>
+                            <div class="navigation-widget-sale-block-triangles lower-triangle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side-bar">
+                <div class="blog-post-widget">
+                    <header class="blog-post-widget-header">
+                        <img class="blog-post-widget-header-background" src="images/blog-post-widget-header-background.png" alt="Header background">
+                    </header>
+                    <div class="blog-post-widget-content">
+                        <img class="blog-post-widget-content-avatar" src="images/blog-post-widget-avatar.png" alt="Avatar">
+                        <div class="blog-post-widget-content-text-wrapper">
+                            <h2 class="blog-post-widget-content-user-name">John Raymons</h2>
+                            <p class="blog-post-widget-content-post">
+                                Your talent amazes! This is awesome. Excited to see the final product.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-post-widget-comments-block">
+                        <div class="blog-post-widget-comments-block-comments-area">
+
+                        </div>
+                        <textarea name="comment" id="blog-post-widget-comments-block-user-comment" placeholder="You can leave your comment..."></textarea>
+                        <span class="blog-post-widget-comments-block-user-comment-add-button icon-add-button"></span>
+                    </div>
+                    <footer class="blog-post-widget-footer">
+                        <div class="blog-post-widget-footer-item blog-post-widget-footer-views">
+                            <span class="blog-post-widget-footer-item-icon icon-preview"></span>
+                            <span class="blog-post-widget-footer-item-number blog-post-widget-footer-views-number"></span>
+                        </div>
+                        <div class="blog-post-widget-footer-item blog-post-widget-footer-comments" data-active="false">
+                            <span class="blog-post-widget-footer-item-icon icon-comment-bubble"></span>
+                            <span class="blog-post-widget-footer-item-number blog-post-widget-footer-comments-number"></span>
+                        </div>
+                        <div class="blog-post-widget-footer-item blog-post-widget-footer-likes" data-active="false">
+                            <span class="blog-post-widget-footer-item-icon icon-heart"></span>
+                            <span class="blog-post-widget-footer-item-number blog-post-widget-footer-likes-number"></span>
+                        </div>
+                    </footer>
+                </div>
+                <div class="contact-form-widget">
+                    <form id="contact-form-widget">
+                        <!--text section-->
+                        <div class="contact-form-widget-text-section">
+                            <label class="contact-form-widget-text-section-contacts-form-name">Contacts</label>
+                            <div class="contact-form-widget-text-section-contacts-form-wrapper">
+                                <input class="contact-form-widget-text-section-contacts-form" type="email" name="mailcontacts" placeholder="Add mail">
+                                <span class="contact-form-widget-text-section-contacts-form-add-button icon-add-button" data-active="true"></span>
+                            </div>
+
+                            <div class="contact-form-widget-text-section-emails"></div>
+                            <div class="contact-form-widget-text-section-valide-comment"></div>
+
+                            <label class="contact-form-widget-text-section-subject-form-name">Subject</label>
+                            <input class="contact-form-widget-text-section-subject-form" id="text-section-subject-form" type="text" name="mailsubject" placeholder="You can add a subject">
+
+                            <label class="contact-form-widget-text-section-message-form-name">Message</label>
+                            <textarea class="contact-form-widget-text-section-message-form" rows="50" name="mailmessage"
+                            placeholder="Leave your message here"></textarea>
+                        </div>
+
+                        <!--send section-->
+                        <div class="contact-form-widget-send-section">
+                            <div class="contact-form-widget-send-section-copy-checkbox-side">
+                                <input class="contact-form-widget-send-section-copy-checkbox" id="copycheckbox" type="checkbox" name="copycheckbox">
+                                <label for="copycheckbox"><span class="contact-form-widget-send-section-copy-checkbox-name">Save a copy</span></label>
+                            </div>
+
+                            <div class="contact-form-widget-send-section-button-side">
+                                <span class="contact-form-widget-send-section-button-block"></span>
+                                <button type="button" class="contact-form-widget-send-section-button">
+                                    <i class="icon-send-button"></i>
+                                    Send Mail
+                                </button>
+                            </div>
+                        </div>
+                        <div class="contact-form-widget-send-message"></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="widgets-page-footer">
+            <div class="team-game-widget">
+                <h2 class="team-game-widget-title">Enter names of our team</h2>
+                <fieldset class="team-game-widget-fieldset">
+                    <legend>First teammate:</legend>
+                    <input type="text" id="first-name-input" name="firstname" placeholder="First name:">
+                    <input type="text" id="last-name-input" name="lastname" placeholder="Last name:">
+                    <button class="button-next">Next</button>
+                </fieldset>
+                <div class="team-game-results">
+                    <button class="button-again">Again?</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="libs/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="libs/colorpicker/js/colorpicker.js"></script>
+    <script src="libs/jQuery-UI/jquery-ui.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

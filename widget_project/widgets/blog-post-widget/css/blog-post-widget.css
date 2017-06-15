@@ -1,0 +1,299 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'mark-team-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account:before {
+    content: "\e900";
+}
+.icon-add-button:before {
+    content: "\e901";
+}
+.icon-back-up:before {
+    content: "\e902";
+}
+.icon-comment-bubble:before {
+    content: "\e903";
+}
+.icon-edit:before {
+    content: "\e904";
+}
+.icon-gps-pointer:before {
+    content: "\e905";
+}
+.icon-heart:before {
+    content: "\e906";
+}
+.icon-my-profile:before {
+    content: "\e907";
+}
+.icon-preview:before {
+    content: "\e908";
+}
+.icon-send-button:before {
+    content: "\e909";
+}
+.icon-settings-gear:before {
+    content: "\e90a";
+}
+.icon-settings-key:before {
+    content: "\e90b";
+}
+.icon-share:before {
+    content: "\e90c";
+}
+.icon-upload-cloud:before {
+    content: "\e90d";
+}
+.icon-web-statistics:before {
+    content: "\e90e";
+}
+
+/* Widget Page Styles*/
+
+body {
+    background-color: #e2c397;
+}
+
+.blog-post-widget{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 392px;
+    width: 370px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-post-widget-header {
+    position: absolute;
+    height: 204px;
+    overflow: hidden;
+}
+
+.blog-post-widget-header-background {
+    position: relative;
+    left: -15px;
+
+}
+
+.blog-post-widget-content {
+    position: absolute;
+    width: 100%;
+    top: 204px;
+}
+
+.blog-post-widget-content-avatar {
+    position: absolute;
+    left: 20px;
+    top: 34px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 1px #d6d1cc;
+}
+
+.blog-post-widget-content-text-wrapper {
+    position: absolute;
+    left: 125px;
+}
+
+.blog-post-widget-content-user-name {
+    margin: 30px 0 6px 0;
+    font-family: OpenSansSemiBold, sans-serif;
+    font-size: 28px;
+    color: #5c5146;
+    letter-spacing: -0.04em;
+}
+
+.blog-post-widget-content-post {
+    font-family: OpenSansRegular;
+    font-size: 13px;
+    color: #8e8071;
+    letter-spacing: -0.02em;
+    line-height: 23px;
+}
+
+.blog-post-widget-comments-block {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 344px;
+
+}
+
+.blog-post-widget-comments-block-comments-area {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 270px;
+    width: 360px;
+    background-color: #fff;
+    color: #8e8071;
+    border-radius: 5px;
+    font-size: 12px;
+    overflow-y: scroll;
+    letter-spacing: -0.04em;
+}
+
+.comments-area-comment-article {
+    font-family: OpenSansRegular, sans-serif;
+    background-color: #f6f1ed;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #8e8071;
+    border-radius: 5px;
+}
+
+.comments-area-comment-title {
+    font-family: OpenSansBold, sans-serif;
+    font-size: 18px;
+    color: #5c5146;
+    border-bottom: 1px solid #8e8071;;
+}
+
+.comments-area-comment {
+    margin: 5px 0;
+}
+
+[id^="comments-like-icon"] {
+    margin-left: 265px;
+    opacity: .7;
+    letter-spacing: 5px;
+}
+
+[id^="comments-like-icon"]:hover {
+    cursor: pointer;
+}
+
+#blog-post-widget-comments-block-user-comment {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    height: 50px;
+    width: 75%;
+    resize: none;
+    border-radius: 5px;
+    border: 2px solid #8e8071;
+}
+
+.blog-post-widget-comments-block-user-comment-add-button {
+    position: absolute;
+    bottom: 11px;
+    right: 20px;
+    color: #8e8071;
+    font-size: 45px;
+    opacity: .5;
+}
+
+.blog-post-widget-comments-block-user-comment-add-button:hover {
+    cursor: pointer;
+}
+
+.blog-post-widget-footer {
+    position: absolute;
+    bottom: 0;
+    height: 48px;
+    width: 100%;
+}
+
+.blog-post-widget-footer-item {
+    position: absolute;
+    width: 123px;
+    height: 100%;
+    background-color: #f6f1ed;
+    color: #8e8071;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.blog-post-widget-footer-item:hover {
+    background-color: #e9e3df;
+    cursor: pointer;
+}
+
+.blog-post-widget-footer-item > *{
+    opacity: .7;
+    position: absolute;
+}
+
+.blog-post-widget-footer-item-icon {
+    left: 29px;
+    font-size: 18px;
+}
+
+.blog-post-widget-footer-item-number {
+    left: 60px;
+}
+
+.blog-post-widget-footer-views {
+    left: 0;
+}
+
+.blog-post-widget-footer-comments {
+    width: 122px;
+    left: 124px;
+}
+
+.blog-post-widget-footer-likes {
+    right: 0;
+}
+
+.blog-post-widget-footer-item-number {
+    font-family: OpenSansBold;
+    letter-spacing: -0.025em;
+}
