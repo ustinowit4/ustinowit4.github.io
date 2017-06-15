@@ -1,0 +1,113 @@
+#morning_nature_block {
+    width: 1700px;
+    max-width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+#morning_nature_sky_block {
+    height: 40%;
+    margin-top: 0;
+    position: relative;
+    background-color: darkblue;
+    -webkit-animation-name: morning_sky;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes morning_sky {
+    0% {
+        box-shadow: 0 -200px 100px -100px darkblue inset
+    }
+    10% {
+        box-shadow: 0 -200px 100px -100px orangered inset
+    }
+    25% {
+        box-shadow: 0 -200px 100px -100px cornflowerblue inset
+    }
+    45% {
+        background-color: skyblue
+    }
+    75% {
+        box-shadow: 0 -200px 100px -100px cornflowerblue inset
+    }
+    90% {
+        box-shadow: 0 -200px 100px -100px blueviolet inset
+    }
+    100% {
+        box-shadow: 0 -200px 100px -100px darkblue inset
+    }
+}
+
+#morning_nature_sun_block {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: yellow;
+    border-radius: 100px;
+    box-shadow: 0 0 100px 0 yellow;
+    -webkit-animation-name: daily_sun;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes daily_sun {
+    0% {
+        left: -10%;
+        bottom: -30%;
+        background-color: orange;
+        -webkit-box-shadow: gold;
+        -webkit-transform: scale(1.5);
+    }
+    50% {
+        left: 50%;
+        bottom: 80%;
+        background: yellow;
+        -webkit-transform: scale(1);
+    }
+    100% {
+        left: 99%;
+        bottom: -30%;
+        background: orange;
+        -webkit-box-shadow: gold;
+        -webkit-transform: scale(1.5);
+    }
+}
+
+#morning_nature_earth_block {
+    height: 60%;
+    margin-bottom: 0;
+    position: relative;
+    background-color: black;
+}
+
+.morning_nature_grass_block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("http://img-fotki.yandex.ru/get/5000/5091629.98/0_7a92d_7ece70d7_XL.png") no-repeat center bottom;
+}
+
+#collumn_open_button {
+    width: 20%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: darkmagenta;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#collumn_open_button:hover {
+    -webkit-transform: scale(1.5);
+}

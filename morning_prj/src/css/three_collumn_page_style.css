@@ -1,0 +1,134 @@
+.collumn_block {
+    width: 1700px;
+    max-width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+    background-color: #888888;
+}
+
+#left_block {
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: blue;
+}
+
+#middle_block {
+    width: 33.33%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: darkolivegreen;
+}
+
+#right_block {
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-color: darkred;
+}
+
+.animation_block {
+    width: 50%;
+    height: 30%;
+    min-height: 30%;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+    background-color: salmon;
+}
+
+@-webkit-keyframes animation_block {
+    30% {
+        background-color: mediumorchid
+    }
+    60% {
+        background-color: skyblue
+    }
+    90% {
+        background-color: springgreen
+    }
+    100% {
+        background-color: mediumorchid
+    }
+    from {
+        right: -90px;
+        -webkit-transform: rotate(360deg);
+        border-radius: 50%;
+    }
+    to {
+        left: 90px;
+    }
+}
+
+#up_side:hover {
+    -webkit-animation-timing-function: up;
+    -webkit-animation-name: animation_block;
+    -webkit-animation-duration: 10s;
+}
+
+#down_side {
+    -webkit-transition-property: height;
+}
+
+#down_side:hover {
+    width: 70%;
+    height: 50%;
+    background-color: indigo;
+    -webkit-animation-timing-function: down;
+    -webkit-transition: width 5s, height 5s, background-color 5s, -webkit-transform 5s;
+    -webkit-transition-delay: 1s;
+    -webkit-transition-duration: 10s;
+    height: 100px;
+    -webkit-transition-timing-function: ease;
+}
+
+input {
+    width: 20%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation-name: input_block;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+}
+
+input:focus {
+    width: 50%;
+    height: 40%;
+    left: 10px;
+    -webkit-transition-delay: 0.5s;
+    -webkit-transition-duration: 10s;
+    -webkit-transition: width 5s, height 5s, background-color 5s;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-property: left;
+}
+
+@-webkit-keyframes input_block {
+    0% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: skyblue
+    }
+}
+
+<button id="collumn_open_button" onclick=window.open("src/three_collumn_page.html")>Open 3 collumn page
+        </button>
+
+
