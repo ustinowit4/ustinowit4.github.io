@@ -1,0 +1,155 @@
+/* Webfont: Lato-Bold */
+@font-face {
+    font-family: 'LatoBold';
+    src: url('../font/Lato/fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../font/Lato/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/Lato/fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Regular */
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../font/Lato/fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../font/Lato/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/Lato/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Light */
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../font/Lato/fonts/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('../font/Lato/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/Lato/fonts/Lato-Light.woff2') format('woff2'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* */
+
+article, aside, footer, header, hgroup, main, nav, section {
+    width: 1600px;
+    position: relative;
+    display: block;
+}
+
+/* */
+.downloadable_content_section_background {
+    height: 1400px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.downloadable_content_section_top_block {
+    height: 750px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-image: url("../img/page2background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.downloadable_content_section_top_block_ipad {
+    width: 620px;
+    height: 690px;
+    margin-top: 60px;
+    margin-left: 980px;
+    position: absolute;
+    background-image: url("../img/ipad.png");
+}
+
+.downloadable_content_section_top_block_text_header {
+    width: 750px;
+    height: 105px;
+    margin-top: 92px;
+    margin-left: 210px;
+    position: absolute;
+    text-align: left;
+    text-decoration: none;
+    font-weight: normal;
+    line-height: 1;
+    font-family: LatoLight;
+    font-size: 55px;
+    color: #ffffff;
+}
+
+.downloadable_content_section_top_block_text {
+    width: 750px;
+    height: 250px;
+    margin-top: 235px;
+    margin-left: 210px;
+    position: absolute;
+    text-align: left;
+    color: #ffffff;
+    line-height: 2;
+    font-family: LatoRegular;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.downloadable_content_section_top_block_download_button {
+    width: 275px;
+    height: 65px;
+    margin-top: 550px;
+    margin-left: 210px;
+    position: absolute;
+    background-color: #e8b968;
+    color: #ffffff;
+    font-family: LatoBold;
+    font-size: 18px;
+    border: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.downloadable_content_section_footer_block {
+    height: 650px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    position: relative;
+    background-image: url("../img/page2footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.downloadable_content_section_footer_block_background_ring_photo {
+    width: 120px;
+    height: 120px;
+    margin-top: 135px;
+    margin-left: 770px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 5px solid #ffffff;
+    border-radius: 120px 120px 120px 120px;
+    background-image: url("../img/author.png");
+}
+
+.downloadable_content_section_footer_block_text {
+    width: 1035px;
+    height: 100px;
+    margin-top: 305px;
+    margin-left: 285px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1;
+    font-family: LatoItalic;
+    font-size: 43px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* */

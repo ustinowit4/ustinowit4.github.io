@@ -1,0 +1,111 @@
+/* Webfont: Lato-Bold */
+@font-face {
+    font-family: 'LatoBold';
+    src: url('../font/Lato/fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../font/Lato/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/Lato/fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Regular */
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../font/Lato/fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../font/Lato/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/Lato/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* */
+
+article, aside, footer, header, hgroup, main, nav, section {
+    width: 1700px;
+    position: relative;
+    display: block;
+}
+
+/* */
+
+.demo_section_background {
+    height: 900px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.demo_section_text_header {
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    color: #9197a8;
+    line-height: 2;
+    font-weight: normal;
+    font-family: LatoBold;
+    font-size: 15px;
+}
+
+.demo_section_text_block {
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    color: #9197a8;
+    line-height: 2;
+    font-family: LatoRegular;
+    font-size: 16px;
+}
+
+.demo_section_dreamy_block {
+    width: 520px;
+    height: 180px;
+    margin-top: 110px;
+    margin-left: 210px;
+    position: absolute;
+}
+
+.demo_section_buzz_block {
+    width: 520px;
+    height: 180px;
+    margin-top: 110px;
+    margin-left: 875px;
+    position: absolute;
+}
+
+.demo_section_apple_block {
+    width: 520px;
+    height: 180px;
+    margin-top: 378px;
+    margin-left: 210px;
+    position: absolute;
+}
+
+.demo_section_juice_block {
+    width: 520px;
+    height: 180px;
+    margin-top: 378px;
+    margin-left: 875px;
+    position: absolute;
+}
+
+.demo_section_try_demo_button {
+    width: 180px;
+    height: 60px;
+    margin-top: 630px;
+    margin-left: 720px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f69679;
+    color: #ffffff;
+    font-family: LatoBold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+/* */

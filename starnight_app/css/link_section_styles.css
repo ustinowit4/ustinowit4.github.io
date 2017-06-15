@@ -1,0 +1,109 @@
+/* Webfont: Lato-Regular */
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../font/Lato/fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../font/Lato/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/Lato/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */ url('../font/Lato/fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('../font/Helvetica/HelveticaNeue.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../font/Helvetica/helvetica-neue-bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* */
+
+article, aside, footer, header, hgroup, main, nav, section {
+    width: 1700px;
+    position: relative;
+    display: block;
+}
+
+/* */
+
+.link_section_styles_main_background {
+    height: 700px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: #7accc8;
+    overflow: auto;
+}
+
+.link_section_styles_text_collumn_content {
+    width: 385px;
+    height: 180px;
+    margin-top: 80px;
+    margin-left: 210px;
+    position: absolute;
+    color: #ffffff;
+    columns: 2 385px;
+    font-family: HelveticaNeueRegular;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    line-height: 2;
+}
+
+.link_section_styles_menu {
+    font-weight: 600;
+    margin-top: 80px;
+    margin-left: 1280px;
+    position: absolute;
+    color: #ffffff;
+}
+
+.link_section_styles_menu_case {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 2;
+    font-family: HelveticaBold;
+    font-size: 14px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.link_section_styles_author_photo {
+    width: 60px;
+    height: 62px;
+    margin-top: 300px;
+    margin-left: 770px;
+    position: absolute;
+    background-image: url("../img/shape.png");
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.link_section_styles_author_name {
+    height: 20px;
+    width: 500px;
+    margin-top: 445px;
+    margin-left: 595px;
+    position: absolute;
+    color: #ffffff;
+    font-family: LatoRegular;
+    font-size: 12px;
+    letter-spacing: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* */
+
+
